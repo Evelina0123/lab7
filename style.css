@@ -1,0 +1,124 @@
+body {
+  background-color: #fce4ec;
+  color: #333;
+}
+
+.site-header {
+  background-color: #e91e63;
+  color: #ffffff;
+}
+
+.site-title {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+#logo {
+  border-radius: 50%;
+  border: 3px solid #ffffff;
+  background-color: #ffffff;
+  object-fit: cover;
+}
+
+.content-block {
+  background-color: #ffffff;
+}
+
+.section-title {
+  color: #e91e63;
+  border-bottom: 2px solid #e91e63;
+}
+
+.site-footer {
+  background-color: #e91e63;
+  color: #ffffff;
+}
+
+/* Галерея */
+.gallery-wrap {
+  position: relative;
+  max-width: 1000px;
+  padding: 0 40px;
+}
+
+.gallery-item {
+  min-width: 0;
+}
+
+.gallery-item img {
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+}
+
+.gallery-arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 2;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 50%;
+  background-color: #e91e63;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.gallery-arrow:hover,
+.gallery-arrow:focus {
+  background-color: #c2185b;
+}
+
+.gallery-arrow.slick-disabled {
+  background-color: #f8bbd0;
+  cursor: default;
+}
+
+.gallery-prev {
+  left: 0;
+}
+
+.gallery-next {
+  right: 0;
+}
+
+/* Пейджер */
+.slick-dots {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.slick-dots button {
+  width: 14px;
+  height: 14px;
+  padding: 0;
+  border: 2px solid #e91e63;
+  border-radius: 50%;
+  background-color: #ffffff;
+  font-size: 0;
+  cursor: pointer;
+}
+
+.slick-dots .slick-active button {
+  background-color: #e91e63;
+}
+
+@media (max-width: 575.98px) {
+  .gallery-wrap {
+    padding: 0 28px;
+  }
+
+  .gallery-arrow {
+    width: 32px;
+    height: 32px;
+  }
+}
